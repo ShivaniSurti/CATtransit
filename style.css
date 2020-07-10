@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(143, 218, 156);
+}
+
+li{
+    float: inline;
+}
+
+a{
+    
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: aquamarine;
+}
+
+nav{
+    background-color: black;
+    padding: 8px;
+}

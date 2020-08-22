@@ -33,12 +33,20 @@
 
 
     <p>If you would like see anything else, please let us know!!!</p>
-    <form action="_blank">
+    <form action="welcome.php" method="post" >
+        <label for="firstname">First name</label>
+        <input type="text" id="firstname" name="firstname">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname">
+        <input type="submit" value="Submit" />
+        </form>
+
+    <!-- <form action="_blank">
         <label for="suggestion">Suggestion Here:</label> <br>
-        <input type="text" name="suggestion" id="suggestion"> <br>
+        <textarea name="suggestion" rows="5" cols="40"><?php echo $suggestion;?>"</textarea> <br>
 
         <input type="submit" value="Thank you!">
-    </form>
+    </form> -->
 
 </body>
 </html>

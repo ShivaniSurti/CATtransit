@@ -21,7 +21,7 @@ See comments within for further detail.
 This is a HTML file which provides the basic structure for the rest of the website. It includes the map that graphs all of the bus stops in Charlottesville and their popularity using an iframe (a tag in HTML). 
 
 #### QandA.html
-
+This is a HTML file which is planned to contain common questions asked by first time users of public transportation. 
 #### faq.html
 
 #### tutorial.html

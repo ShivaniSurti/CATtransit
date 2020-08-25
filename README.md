@@ -18,15 +18,19 @@ See comments within for further detail.
 ### Website 
 
 #### index.html 
+This is a HTML file which provides the basic structure for the rest of the website. It includes the map that graphs all of the bus stops in Charlottesville and their popularity using an iframe (a tag in HTML). 
 
 #### QandA.html
 
 #### faq.html
 
 #### tutorial.html
+This is a HTML file which contains code to highlight to users the how to use this web tool.
 
 #### welcome.php
+php would be the language used to make the forms interactive, who in the future would be able to communication to a server.
 
 #### style.css
+This file contains the basic styling of the website.
 
 permalink: /index.html

@@ -1,62 +1,46 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <!-- Trying to add map -->
-     <script src="jquery.js"></script> 
- <!--    <script> 
-    $(function(){
-      $("#includedContent").load("map.html"); 
-    });
-    </script> -->
-    <!-- end -->
-    {% block head %}
-    <title>CAT Data</title>
+{% extends 'base.html' %}
 
-    {% endblock %}
-</head>
-<body>
-    {% block body %}
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="tutorial.html">Tutorial</a>
-        <a href="QandA.html">Frequently asked Questions</a>
-    </nav>
-    <h1>Welcome to CAT Data Anaylsis</h1>
-    <p>This website is a tool presented to you by
-        the CAT board through the help of research
-        assistants. Here located is all the information 
-        one could possibly need in understanding how the 
-        CAT operates and the popularity of bus stops overtime.
-        The objective is to help CAT riders everyday commute
-        easier!
-    </p>
-   <!--  <div id="includedContent"></div> -->
-    <iframe src="map_withpop.html" seamless width="600px" height="500px" id="center" ></iframe>
+{% block head %}
+<title>CAT Data</title>
+
+{% endblock %}
+
+{% block body %}
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="QandA.html">Frequently asked Questions</a>
+</nav>
+<h1>Welcome to CAT Data Anaylsis</h1>
+<p>This website is a tool presented to you by
+    the CAT board through the help of research
+    assistants. Here located is all the information 
+    one could possibly need in understanding how the 
+    CAT operates and the popularity of bus stops overtime.
+    The objective is to help CAT riders everyday commute
+    easier!
+</p>
+<!--  <div id="includedContent"></div> -->
+<iframe src="map_withpop.html" seamless width="600px" height="500px" id="center" ></iframe>
 
 
-    <p>If you would like see anything else, please let us know!!!</p>
-    <form action="welcome.php" method="post" >
-        <label for="firstname">First name</label>
-        <input type="text" id="firstname" name="firstname">
-        <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" name="lastname">
-        <input type="submit" value="Submit" />
-        </form>
+<p>If you would like see anything else, please let us know!!!</p>
+<form action="welcome.php" method="post" >
+    <label for="firstname">First name</label>
+    <input type="text" id="firstname" name="firstname">
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname">
+    <input type="submit" value="Submit" />
+    </form>
 
-    <!-- <form action="_blank">
-        <label for="suggestion">Suggestion Here:</label> <br>
-        <textarea name="suggestion" rows="5" cols="40"><?php echo $suggestion;?>"</textarea> <br>
+<!-- <form action="_blank">
+    <label for="suggestion">Suggestion Here:</label> <br>
+    <textarea name="suggestion" rows="5" cols="40"><?php echo $suggestion;?>"</textarea> <br>
 
-        <input type="submit" value="Thank you!">
-    </form> -->
+    <input type="submit" value="Thank you!">
+</form> -->
 
-</body>
-<body>
-    <p>Introduction Video</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2wm5tbk2rU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-</body>
-    {% endblock %}
-</html>
+<p>Introduction Video</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z2wm5tbk2rU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endblock %}

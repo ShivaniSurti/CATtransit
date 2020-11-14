@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <!-- Trying to add map -->
      <script src="jquery.js"></script> 
  <!--    <script> 
@@ -11,13 +11,16 @@
     });
     </script> -->
     <!-- end -->
+    {% block head %}
     <title>CAT Data</title>
+
+    {% endblock %}
 </head>
 <body>
+    {% block body %}
     <nav>
         <a href="index.html">Home</a>
         <a href="tutorial.html">Tutorial</a>
-        <a href="faq.html">Further Questions</a>
         <a href="QandA.html">Frequently asked Questions</a>
     </nav>
     <h1>Welcome to CAT Data Anaylsis</h1>
@@ -30,7 +33,7 @@
         easier!
     </p>
    <!--  <div id="includedContent"></div> -->
-    <iframe src="new_withpop.html" seamless width="600px" height="500px" id="center" ></iframe>
+    <iframe src="map_withpop.html" seamless width="600px" height="500px" id="center" ></iframe>
 
 
     <p>If you would like see anything else, please let us know!!!</p>
@@ -55,4 +58,5 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2wm5tbk2rU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
 </body>
+    {% endblock %}
 </html>

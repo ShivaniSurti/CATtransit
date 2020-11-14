@@ -1,5 +1,5 @@
 body{
-    background-color:#F9F3EE;
+    background-color:#736CE1;
     padding: 10px 10px;
     margin: 50px 50px;
     border: 10px 10px;
@@ -13,6 +13,7 @@ a{
     
     padding: 8px;
     color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 a:hover{
@@ -20,7 +21,7 @@ a:hover{
 }
 
 nav{
-    background-color:tan;
+    background-color:#636277;
     text-align: center;
     padding: 15px;
 }
@@ -31,9 +32,11 @@ h1{
 
 iframe[seamless]{
     border: none;
-    
 }
 
+iframe{
+    margin: 50px 50px;
+}
 .center{
     margin:auto;
     width: 50%;
